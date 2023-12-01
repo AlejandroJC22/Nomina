@@ -14,7 +14,7 @@ public class Conexion {
         con = null;
         try{
             Class.forName("com.mysql.jdbc.Driver"); //Conectamos con la base de datos
-            con = DriverManager.getConnection("jdbc:mysql://localhost/bd_nomina","root",""); //Establecemos conexion con la base de datos
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3307/bd_nomina","root",""); //Establecemos conexion con la base de datos
             if(con!=null){
                 //Si la conexión no es nula, establecemos conexión
             }

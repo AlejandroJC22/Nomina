@@ -392,7 +392,7 @@ public class Liquidacion extends javax.swing.JFrame {
         liq = new Liquidar(salariobase,comision,hora_extra, valor);
         
         try{
-            Connection cn = DriverManager.getConnection("jdbc:mysql://localhost/bd_nomina","root","");
+            Connection cn = DriverManager.getConnection("jdbc:mysql://localhost:3307/bd_nomina","root","");
             PreparedStatement info = cn.prepareStatement("insert into liquidación values (?,?,?,?,?,?)");
             
             info.setString(1, nombre);

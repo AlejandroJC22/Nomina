@@ -446,7 +446,7 @@ public class Nómina extends javax.swing.JFrame {
             Sueldo c;
             c = new Sueldo(Sueldo.sueldo);
             try{
-            Connection cn = DriverManager.getConnection("jdbc:mysql://localhost/bd_nomina","root","");
+            Connection cn = DriverManager.getConnection("jdbc:mysql://localhost:3307/bd_nomina","root","");
             PreparedStatement info = cn.prepareStatement("insert into empleados values (?,?,?,?,?,?,?)");
             
             info.setString(1, txt_nombre.getText());
